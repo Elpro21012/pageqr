@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Proyecto Digital QR - UNAB</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(120deg, #141e30, #243b55, #0d1b2a);
+        background-size: 300% 300%;
+        animation: moverFondo 12s ease infinite;
+    }
+
+    @keyframes moverFondo {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .container {
+        text-align: center;
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    /* LOGOS */
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logos img:first-child {
+        width: 280px;
+    }
+
+    .logos img:last-child {
+        width: 120px;
+    }
+
+    @keyframes flotar {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+    }
+
+    /* QRs */
+    .qr-row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .qr-box {
+        background: rgba(255,255,255,0.15);
+        padding: 25px;
+        border-radius: 15px;
+        backdrop-filter: blur(4px);
+        width: 330px;
+        animation: fadeIn 1s ease;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .qr-box img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .qr-box h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 50px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .footer-box {
+        background: rgba(0, 102, 204, 0.75);
+        padding: 15px 25px;
+        border-radius: 12px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .nombres-box {
+        background: rgba(0,0,0,0.45);
+        padding: 15px 25px;
+        border-radius: 12px;
+        max-width: 90%;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 13px;
+        word-break: break-all;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+        h1 { font-size: 26px; }
+        .qr-box { width: 90%; }
+        .logos { justify-content: center; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logos">
+        <img src="UNAB.png" alt="Logo UNAB" />
+        <img src="ISI.png" alt="Logo Ingeniería" />
+    </div>
+
+    <h1>Proyecto Digital QR - UNAB</h1>
+
+    <div class="qr-row">
+
+        <div class="qr-box">
+            <h3>Enlace del Story Book</h3>
+            <img src="Story 1.jpg" alt="QR Story Book" />
+            <p><a href="https://gemini.google.com/share/69b1289310ad">https://gemini.google.com/share/69b1289310ad</a></p>
+        </div>
+
+        <div class="qr-box">
+            <h3>Enlace del StoryBook</h3>
+            <img src="Story 2.jpg" alt="QR Formulario" />
+            <p><a href="https://gemini.google.com/share/2360b4b5b7ae">https://gemini.google.com/share/2360b4b5b7ae</a></p>
+
+    </div>
+        <!-- QR EXTRA 1 -->
+        <div class="qr-box">
+            <h3>Enlace del StoryBook</h3>
+            <img src="Story 3.jpg" alt="QR Extra 1" />
+            <p><a href="https://gemini.google.com/share/1d0ca4f90af1">https://gemini.google.com/share/1d0ca4f90af1</a></p>
+        </div>
+
+        <div class="qr-box">
+            <h3>Enlace del Formulario</h3>
+            <img src="qr-code (2).png" alt="QR Formulario" />
+            <p><a href="https://forms.gle/LRvSkwf3GidTUSpR8">https://forms.gle/LRvSkwf3GidTUSpR8</a></p>
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-box">
+        © 2025 Universidad Nacional Autónoma de Barranca — UNAB<br />
+        Facultad de Ingeniería | Ingenieria de Sistemas E Informatica
+    </div>
+
+    <br />
+
+    <div class="nombres-box">
+        <strong>Integrantes del grupo:</strong><br>
+        Soto Mendoza Steven Smith | Torres Espiritu Stiven Keysi | 
+        Santiago Alva Gustavo Otilio | Ronquillo Santos Axel Rodrigo | 
+        Ramirez Cruzado Luis Angel | Dias Fernandez Paul Esteban | 
+        Alejos Aldave Aly Anderson | Daga Fretel Eduardo Josue | 
+        Ramos Romero Jesus Eduardo | Navarro Pajuelo Fabian Leonardo |
+    </div>
+</footer>
+
+</body>
+</html>
